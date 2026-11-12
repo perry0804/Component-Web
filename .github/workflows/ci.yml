@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  catalog:
+    name: 校验组件元数据与索引
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: 校验 meta.json
+        run: npm run check
+
+      - name: 检查 CATALOG.md / index.html 是否已更新
+        run: |
+          npm run catalog
+          if ! git diff --quiet -- CATALOG.md index.html; then
+            echo "::error::CATALOG.md 或 index.html 未同步，请在本地运行 npm run catalog 后提交"
+            git --no-pager diff --stat -- CATALOG.md index.html
+            exit 1
+          fi

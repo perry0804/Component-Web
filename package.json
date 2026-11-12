@@ -1,0 +1,22 @@
+{
+  "name": "component-web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "个人 Web 组件收藏库：交互动画与任意可复用 Web 组件",
+  "author": "perry0804 <1716109045@163.com>",
+  "license": "MIT",
+  "homepage": "https://perry0804.github.io/Component-Web/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perry0804/Component-Web.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "new": "node scripts/new-component.mjs",
+    "catalog": "node scripts/build-catalog.mjs",
+    "check": "node scripts/build-catalog.mjs --check"
+  }
+}

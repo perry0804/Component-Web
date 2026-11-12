@@ -1,0 +1,19 @@
+{
+  "name": "{{Name}}",
+  "slug": "{{slug}}",
+  "title": "{{title}}",
+  "category": "{{category}}",
+  "description": "",
+  "tags": [],
+  "status": "idea",
+  "implementations": ["vanilla", "react"],
+  "dependencies": [],
+  "source": {
+    "type": "original",
+    "url": "",
+    "author": "",
+    "license": ""
+  },
+  "createdAt": "{{date}}",
+  "updatedAt": "{{date}}"
+}

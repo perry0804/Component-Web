@@ -1,0 +1,18 @@
+[
+  { "id": "text", "label": "文字效果", "desc": "流光、打字机、乱码解码、渐变文字、文字拆分动画" },
+  { "id": "button", "label": "按钮", "desc": "磁吸、涟漪、发光边框、按压反馈" },
+  { "id": "background", "label": "背景氛围", "desc": "极光、网格、粒子、噪点、渐变流动" },
+  { "id": "cursor", "label": "光标与指针", "desc": "自定义光标、跟随光斑、拖尾、聚光灯" },
+  { "id": "card", "label": "卡片", "desc": "3D 倾斜、悬停光效、翻转、玻璃拟态" },
+  { "id": "navigation", "label": "导航", "desc": "导航栏、菜单、Tabs、Dock、面包屑、分页" },
+  { "id": "layout", "label": "布局容器", "desc": "Bento 网格、瀑布流、分栏、可拖拽面板" },
+  { "id": "scroll", "label": "滚动驱动", "desc": "视差、滚动进度、吸顶、跑马灯、滚动揭示" },
+  { "id": "loader", "label": "加载与进度", "desc": "Spinner、骨架屏、进度条、占位动画" },
+  { "id": "feedback", "label": "反馈浮层", "desc": "Toast、Modal、Tooltip、Popover、Drawer" },
+  { "id": "form", "label": "表单输入", "desc": "输入框、开关、滑块、选择器、OTP、上传" },
+  { "id": "data-display", "label": "数据展示", "desc": "数字滚动、列表、表格、时间线、徽章、图表" },
+  { "id": "media", "label": "媒体", "desc": "图片对比、画廊、轮播、视频播放器、灯箱" },
+  { "id": "transition", "label": "过渡转场", "desc": "页面转场、View Transitions、共享元素、展开收起" },
+  { "id": "3d", "label": "3D 与图形", "desc": "WebGL、Three.js、Canvas、Shader、SVG 生成艺术" },
+  { "id": "misc", "label": "其他", "desc": "暂时无法归类的组件" }
+]

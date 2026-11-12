@@ -1,0 +1,24 @@
+name: 🐛 组件问题
+description: 某个已收录组件的 Bug 或改进点
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: 组件路径
+      placeholder: components/text/shimmer-text
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 现象、复现步骤、期望行为
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 浏览器 / 设备
+      placeholder: Chrome 131 / macOS

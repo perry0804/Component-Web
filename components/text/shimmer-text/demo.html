@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShimmerText · 流光文字</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      background: #161412;
+      color: #e5e5e5;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    .demo-box {
+      width: 680px;
+      max-width: 90vw;
+      padding: 20px 24px;
+      border: 1px solid #2e2a27;
+      border-radius: 8px;
+      background: #1c1917;
+      box-sizing: border-box;
+    }
+    .label {
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #888;
+      font-family: system-ui, -apple-system, "PingFang SC", sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo-box">
+    <div class="label">示例 1：默认单向扫光 (mode="loop")</div>
+    <shimmer-text mode="loop">
+      Analyzing the codebase and drafting an implementation plan...
+    </shimmer-text>
+  </div>
+
+  <div class="demo-box">
+    <div class="label">示例 2：左右往返扫光 (mode="bounce")</div>
+    <shimmer-text mode="bounce">
+      Analyzing the codebase and drafting an implementation plan...
+    </shimmer-text>
+  </div>
+
+  <div class="demo-box">
+    <div class="label">示例 3：自定义颜色、速度与光斑宽度 (highlight-color="#f59e0b" speed="80" spread="18")</div>
+    <shimmer-text mode="loop" base-color="#57534e" highlight-color="#f59e0b" speed="80" spread="18">
+      正在检索资料并整理参考链接，请稍候…
+    </shimmer-text>
+  </div>
+
+  <div class="demo-box">
+    <div class="label">示例 4：关闭鼠标交互 (interactive="false")</div>
+    <shimmer-text interactive="false" highlight-color="#a78bfa">
+      Thinking about the best way to structure this component library...
+    </shimmer-text>
+  </div>
+
+  <!-- 本地脚本使用普通 script 引入，保证 file:// 下可直接打开 -->
+  <script src="./vanilla/shimmer-text.js"></script>
+</body>
+</html>

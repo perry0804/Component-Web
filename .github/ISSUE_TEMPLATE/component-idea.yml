@@ -1,0 +1,53 @@
+name: 💡 组件灵感
+description: 随手记录一个想收录的组件 / 效果（手机上看到好东西时很方便）
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: 链接
+      description: 原始效果所在的网址（CodePen / 网站 / 推文等）
+      placeholder: https://
+  - type: textarea
+    id: desc
+    attributes:
+      label: 效果描述
+      description: 描述效果本身：初始状态、悬停 / 点击 / 滚动时发生什么
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分类
+      options:
+        - text 文字效果
+        - button 按钮
+        - background 背景氛围
+        - cursor 光标与指针
+        - card 卡片
+        - navigation 导航
+        - layout 布局容器
+        - scroll 滚动驱动
+        - loader 加载与进度
+        - feedback 反馈浮层
+        - form 表单输入
+        - data-display 数据展示
+        - media 媒体
+        - transition 过渡转场
+        - 3d 3D 与图形
+        - misc 其他
+  - type: checkboxes
+    id: impl
+    attributes:
+      label: 期望实现
+      options:
+        - label: vanilla（Web Component）
+        - label: React
+        - label: Vue
+        - label: 纯 CSS
+  - type: textarea
+    id: media
+    attributes:
+      label: 截图 / 录屏
+      description: 可直接拖拽图片或视频到这里
